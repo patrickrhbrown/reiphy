@@ -8,16 +8,19 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/> 
+  <link href="css/captionjs.css" type="text/css" rel="stylesheet"/>
+  <style>
+    .galleria{ width: 350px; height: 200px; background: #000 }
+</style>
 </head>
 <body>
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Reiphy</a>
       <ul class="right hide-on-med-and-down">
         <ul class="right hide-on-med-and-down">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Contact us</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html"><strong>Gallery</strong></a></li>
         </ul>
 
       <ul id="nav-mobile" class="side-nav">
@@ -31,7 +34,7 @@
       <br><br>
       <h1 class="header center orange-text">caravaggio</h1>
       <div class="row center">
-        <h5 class="header col s12 light">Orphan.swordsman.painter</h5>
+        <h5 class="header col s12 light">orphan.murderer.painter</h5>
       </div>
       <div class="row center">
         <p class=""
@@ -41,128 +44,139 @@
     </div>
   </div>
 
-
-  <div class="container">
+<div class="container">
 
 <div class="row">
-  <div class="col s12 m6">
-      <div class="card-panel white">
-        <p class="gray-text">Born as Michelangelo Merisi in Italy around 1571, 'Caravaggio' as he became known was orphaned at the age of 11.  He was apprenticed to painter Simone Peterzano in Milan, and eventually moved to Rome.  His life was short, as was his controversial career - he used prostitutes, beggars and thieves as his models for religious paintings, included controversial details such as depicting the Virgin Mary with dirty feet.</p>
-      </div>
-    </div>
 
-  <div class="col s12 m6">
-      <div class="card large">
-            <div class="card-image">
-              <img src="caravaggio-bio.jpg" height="300">
-              <span class="card-title">Caravaggio</span>
-            </div>
-            <div class="card-content">
-              <p>
-              Born 29 September 1571 in <a href="https://goo.gl/maps/jthquf5YfvA2">Caravaggio, Lombardy</a>, died 18 July 1610 in <a href="https://goo.gl/maps/71BHKuGvFTM2">Porto Ercole, Tuscany</a></p>
-            </div>
-            <div class="card-action">
-              <a href="#"></a>
-            </div>
-          </div>
-        </div>
+<div class="col s4 push-s4">
+
+<img class="circle responsive-img z-depth-2" src="img/caravaggio-bio.jpg">
 
 </div>
 
-<div class="row">
-      <div class="col s12 m6">
-        <div class="card-panel indigo">
-          <span class="white-text">According to writer Andrew Graham-Dixon, author of the 2011 biography "Caravaggio: A Life Sacred and Profane," the artist's troubled adult years stemmed directly from that traumatic loss of his family. "He almost seems bound to transgress," Dixon writes. "It's almost like he cannot avoid transgressing. As soon as he's welcomed by authority, welcomed by the pope, welcomed by the Knights of Malta, he has to do something to screw it up. It's almost like a fatal flaw."
-          </span>
+</div>
+
+<div class="section">
+
+  <section id="timeline" class="timeline-outer">
+    <div class="container" id="content">
+      <div class="row">
+        <div class="col s12 m12 l12">
+          <ul class="timeline">
+            <li class="event" data-date="1571-1582">
+              <h3>Early Life</h3>
+              <p>
+                Born as Michelangelo Merisi in Italy around 1571 in Caravaggio, nr Lombardy in Italy to Fermo Merisi, a Steward to the architect of the marquis. 'Caravaggio' as he became known was orphaned at the age of 11 due to plague and apprenticed to painter Simone Peterzano in Milan.
+              </p>
+            </li>
+            <li class="event" data-date="1582-1588">
+              <h3>Teenage Years</h3>
+              <p>
+                Around 1588, Caravaggio moved to Rome and to keep himself fed found work assisting other painters, jumping from one job to the next.  
+              </p>
+            </li>
+            <li class="event" data-date="1588-1595">
+              <h3>Striking Out</h3>
+              <p>Sometime around 1595, Caravaggio struck out on his own an started selling paintings through a dealer (a relatively new phenomenon at this point).  His work soon caught the attention of Cardinal Francisco del Monte, who set him up in a house, with room, board and a pension.
+              </p>
+              <p>By this stage, Caravaggio had 40 works to his name including 'Boy with a Basket of Fruit', 'The Young Bacchus' and 'The Music Party'.</p>
+            </li>
+            <li class="event" data-date="1595-1602">
+              <h3>Career Height in Rome</h3>
+              <p>In 1597, Caravaggio is awarded the commission for the decoration of the Contarelli Chapel in the Church of San Luigi dei Francesi in Rome.  It was an important and daunting assignment of three large paintings of scenes from the life of St Matthew.  The works 'St Matthew and the Angel', 'The Calling of St Matthew' and 'The Martyrdom of St Matthew' were finished in 1601.  But his treatment of religious scenes, using prostitutes, beggars and thieves as his models, made him controversial and several of his commissions would be rejected by their patrons, and find their way into the hands of private collectors.  This was the case with his 'Death of the Virgin' with its depiction of the Virgin with swollen belly and bared legs, such that the Carmelite Nuns that commissioned it refused it and it ended up in the hands of the Duke of Mantua.</p>
+            </li>
+            <li class="event" data-date="1602-1610">
+              <h3>Disgrace</h3>
+              <p>A frequent fighter, Caravaggio eventually served a short prison sentence in 1603 following another painter's complaint that Caravaggio had attacked him. But the next few years only saw Caravaggio's temper becoming hotter. His litany of assaults included throwing a plate of artichokes at a waiter in 1604, and attacking Roman guards with stones in 1605. Wrote one observer: "After a fortnight's work he will swagger about for a month or two with a sword at his side and a servant following him, from one ballcourt to the next, ever ready to engage in a fight or an argument." His violence finally erupted in 1606 when he killed a well-known pimp named Ranuccio Tomassoni.  Immediately after, he went on the run and sought refuge in Naples, Malta and Sicily.  Eventually, he was made a Knight of Malta by the order there, only to have it stripped away when they learned of his crimes.  Among his later works, he created the 'Beheading of St John the Baptist' for the cathedral in Valletta.</p>
+              <p>In order to avoid punishment for murder, Caravaggio's only salvation could come from the pope, who had the power to pardon him. He made a gift of a painting of 'David with the Head of Goliath' to the papal court, with some observers saying that the head resembles Caravaggio himself.  Most likely informed that friends were working on his behalf to secure his pardon, in 1610 Caravaggio began to make his way back to Rome. Sailing from Naples, he was arrested in Palo, where his boat had made a stop. Upon his release, he resumed his journey and eventually arrived at Port'Ercole, where died just a few days later, on July 18, 1610.  He died unaware that a papal reprieve had been in fact just been granted.</p>
+            </li>
+          </ul>
         </div>
       </div>
-
-      <div class="col s12 m6">
-        <div class="card-panel indigo">
-          <span class="white-text">An early published notice on him, dating from 1604 and describing his lifestyle some three years previously, tells how "after a fortnight's work he will swagger about for a month or two with a sword at his side and a servant following him, from one ball-court to the next, ever ready to engage in a fight or an argument, so that it is most awkward to get along with him."
-          </span>
-        </div>
-      </div>
-
     </div>
+  </section>
+</div>
 
 <div class="row">
   <div class="card large">
-        <div class="card-image waves-effect waves-block waves-light z-depth-2">
-          <img class="activator" src="judith-beheading-holofernes-1598.jpg">
+      <div class="card-image waves-effect waves-block waves-light z-depth-2">
+          <img class="activator" src="img/judith-beheading-holofernes-1598.jpg">
       </div>
         <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Judith Beheading Holofernes: Description<i class="material-icons right">more_vert</i></span>
-          <p><a href="">Located at Contarelli Chapel, San Luigi dei Francesi, Rome</a></p>
+          <span class="card-title activator grey-text text-darken-4">Spotlight on: Caravaggio's Realism<i class="material-icons right">more_vert</i></span>
+          <p><a href="">Image: Judith Beheading Holofernes, Palazzo Barberini, Rome, 1598-99</a></p>
       </div>
         <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Caravaggio's Judith Beheading Holofernes<i class="material-icons right">close</i></span>
-          <p>Judith Beheading Holofernes tells the story Biblical story of Judith, who saved her people by seducing and beheading the Assyrian general Holofernes, which was a common theme in the 16th century. The same story has also been painted by artists such as Sandro Botticelli, Donatello, Artemesia Gentileshi, Giorgione, and Andrea Mantegna. Caravaggio was certainly aware of Judith's traditional identity as a symbol of triumph over tyranny; but he presented the subject primarily as a melodrama, choosing the relatively rarely represented climactic moment of the actual beheading of Holofernes. Judith, young, beautiful, and physically weak, draws back distastefully as she seizes Holofernes's hair and cleaves through his neck with his own sword. Holofernes, on his bed, powerful but drunk, nude, and bellowing helplessly, has frozen in the futile struggle of his last instant of consciousness. The bloodthirsty old servant, popeyed as she strains forward, clutches the bag in readiness for the disembodied head. It is a ghastly image, with primary interest in the protagonists' states of mind: the old woman's grim satisfaction, Holofernes's shock, and Judith's sense of determination. Caravaggio intensifies the body language not only in the poses, gestures, and facial expressions but also in the clenched hands. Drama has displaced the charm of his earlier epicurean paintings, as if the world had ceased to be his oyster and become a battlefield. </p>
+          <span class="card-title grey-text text-darken-4">Caravaggio's Realism<i class="material-icons right">close</i></span>
+          <p><strong>Realism:</strong> Caravaggio's intense level of realism was hardly appreciated by his peers. The thinkers behind the Council of Trent wanted art to be more natural than the Mannerist fantasies that had been in style, but Caravaggio went above and beyond this call.</p>
 
-          <p>If the figures have become static, they continue to be made of convincingly solid flesh, displacing space. But the voids around them are at least as black and two-dimensional as they are empty and three-dimensional. The picture resembles a photograph taken with a wide-angle lens, unfolding panoramically rather than penetrating depth within a single frame of vision. The starting point, strangely enough, is the least important figure, the servant, whose precisely profiled head- in relief rather than fully rounded - implies a viewpoint from in front of the right edge of the painting rather than from the center. This peculiarity was probably the result of Caravaggio's having not yet fully developed the technique of rendering on a two-dimensional surface the effect of vigorous action within fully convincing three-dimensional space. Or conceivably the painting was designed to be seen from the right, and he was already experimenting with anamorphic composition.</p>
+          <p>This artist shows everything, from dirty fingernails, to the dirty bottoms of feet, to the bruises and worm holes on apples and the holes in pierced ears.  Beheading is a recurring motif in his paintings and focus on subject matter, and he rarely draws short from depicting it in visceral fashion.</p>
+
+          <p>Such details were not befitting a decorous representation of sacred personages. A Cardinal's secretary described one Caravaggio painting, the Madonna dei Palafrenieri, thusly: <I>"In this painting there are but vulgarity, sacrilege, impiousness and disgust... one would say it is a work made by a painter that can paint well, but of a dark spirit, and who has been for a lot of time far from God, from His adoration, and from any good thought..."</I></p>
+
+          <p>Art historians have long speculated as to the source of Caravaggio's realism. Art historian Helen Langdon suggests that the unprecedented naturalism that marked Caravaggio's mature style most likely had its roots in his training as a young artist: there was a markedly naturalist trend in the art of the Lombardy region and Peterzano may have encouraged the young Caravaggio to study from nature.</p>
+
+          <p><strong>Chiaroscuro:</strong> One art historian famously said that Caravaggio put the "oscuro" in chiaroscuro. His paintings are almost always recognizable for the dramatic contrast between an intensely dark and somber background and an interest in playing with the effects of light.</p>
+
+          <p><strong>Co-extensive space:</strong> Caravaggio had a remarkable talent for extending the action of his composition beyond the picture plane and into the viewer's space. In the Supper at Emmaus, for example, the viewer is almost like a fifth actor in the scene; the arms of the apostle on the right stretches into our space, while the teetering basket of fruit could almost fall to the viewer's feet.</p>
+
+          <p><strong>No frescoes:</strong> Most artists working during the Baroque period made a large portion of their incomes from important fresco commissions in churches or other public places. Caravaggio, on the other hand, refused to paint in fresco and only painted oil on canvas for his entire career. It is unknown whether Caravaggio actually lacked the skills to paint fresco, or if this was merely another personal idiosyncrasy.</p>
+
+          <p><strong>No drawings: </strong> Most artists executed rough preliminary drawings on the canvas before painting in order to be certain of composition and proportions. Amazingly, x-rays have revealed that Caravaggio did no such thing.</p>
+
+          <p>Instead of preparatory drawings, the artist would trace rough indications in the first layers of paint with the handle of his brush, and then go right ahead with the rest of his painting.</p>
+
+          <p>During his lifetime and for centuries after, Caravaggio's style and techniques were harshly criticized for their indecorous naturalism, overly dramatic effects and less sophisticated techniques.</p>
+
+          <p>Nonetheless, Caravaggio's ability to depict religious scenes with an unprecedented approachability and the most human of feelings and sentiment provided invaluable inspiration for artists throughout the ages, including such masters as Rubens, Velazquez and Rembrandt.</p>
       </div>
     </div>
 
-
-
   <div class="row">
-    <div class="col s12 m4 s2">
-      <img class="materialboxed z-depth-2" width="300" height="200" src="xray_caravaggio_1847058c.jpg" data-caption="Most artists executed rough preliminary drawings on the canvas before painting in order to be certain of composition and proportions. Amazingly, x-rays have revealed that Caravaggio did no such thing.  Instead of preparatory drawings, the artist would trace rough indications in the first layers of paint with the handle of his brush, and then go right ahead with the rest of his painting.">
-    </div>
-    <div class="col s12 m4 s2">
-      <img class="materialboxed z-depth-2 tooltip" width="300" height="200" src="callingofmatthewlarge.jpg" title="image">
-    </div>
-    <div class="col s12 m4 s2">
-      <img class="materialboxed z-depth-2" width="300" height="200" src="callingofmatthewlarge.jpg">
-    </div>
-</div>
-
-  <div class="row">
-    <div class="col s12 m4 s2">
-      <img class="materialboxed z-depth-2" width="300" height="200" src="callingofmatthewlarge.jpg">
-    </div>
-  <div class="col s12 m4 s2">
-      <img class="materialboxed z-depth-2" width="300" height="200" src="background1.jpg">
-  </div>
-    <div class="col s12 m4 s2">
-      <img class="materialboxed z-depth-2" width="300" height="200" src="judith-beheading-holofernes-1598.jpg">
-    </div>
-</div>
-
-  <div class="row">
-    <div class="col s12 m12">
-      <div class="card-panel orange">
-          <span class="white-text">Known for his volatile temper and fits of rage, Caravaggio murdered a man, Ranuccio Tommasoni.  Although his influential patrons had shielded him from other legal infractions, there was no recourse here.   Caravaggio was sentenced to death by Pope Paul V.  His final painting, <I>David and Goliath, 1606</I> was presented to the papal court as a highly unusual request for a papal pardon.  He died in exile, having fled to live and work with the Knights of Malta, without learning that a pardon had been granted.  
+    <div class="col l12 s12 m12">
+      <div class="card-panel light-blue">
+          <span class="white-text">According to writer Andrew Graham-Dixon, author of the 2011 biography "Caravaggio: A Life Sacred and Profane," the artist's troubled adult years stemmed directly from that traumatic loss of his family. "He almost seems bound to transgress," Dixon writes. "It's almost like he cannot avoid transgressing. As soon as he's welcomed by authority, welcomed by the pope, welcomed by the Knights of Malta, he has to do something to screw it up. It's almost like a fatal flaw."
           </span>
-        </div>
       </div>
     </div>
+</div>
 
-  <div class="section">
+<div class="section">
+
+  <h5 class="light-blue-text">Caravaggio's Technique and What it Tells Us</h5>
 
   <ul class="collapsible" data-collapsible="accordion">
     <li>
-      <div class="collapsible-header"><i class="material-icons">visibility</i>Who was Caravaggio?</div>
+      <div class="collapsible-header"><i class="material-icons">aspect_ratio</i>Materials</div>
       <div class="collapsible-body"><p>
       <article>
 
-      <p>Born as Michelangelo Merisi in Italy around 1571, 'Caravaggio' as he became known was orphaned at the age of 11.  He was apprenticed to painter Simone Peterzano in Milan, and eventually moved to Rome.  His life was short, as was his controversial career - he used prostitutes, beggars and thieves as his models for religious paintings, included controversial details such as depicting the Virgin Mary with dirty feet.  
+      <p>By the end of the 17th century in Italy most painters had adopted the use of a linen support as a less expensive and more  practical painting surface than wood panels that had predominated previously.</p>
 
-      <p>At the time he was working, the concept of the 'artist' was unheard of and painters were viewed more like craftsmen.  However, Caravaggio in his early career benefited from the developing open art market in which paintings with broad appeal could be completed and sold to a potential buyer. however, Caravaggio regularly tested the bounds of his direct commissions; while it was not unheard of to depict religious figures in paintings in contemporary dress, it was unusual to do so with such fidelity</p>
+      <p>Wood panels of cypress were supplied to both Annibale Carracci and to Caravaggio for their paintings in the Cerasi Chapel, however after painting and abandoning his first version of the Conversion of St Paul painted on panel, Caravaggio changed to canvas for both of his paintings in the chapel.</p>
 
-      <p>According to writer Andrew Graham-Dixon, author of the 2011 biography "Caravaggio: A Life Sacred and Profane," the artist's troubled adult years stemmed directly from that traumatic loss of his family. "He almost seems bound to transgress," Dixon writes. "It's almost like he cannot avoid transgressing. As soon as he's welcomed by authority, welcomed by the pope, welcomed by the Knights of Malta, he has to do something to screw it up. It's almost like a fatal flaw."</p>
+      <p>Caravaggio did not paint in fresco in a time when large major commissions were available to decorate the walls of churches and palaces and though he worked as an assistant to the Cavaliere d’Arpino in his fresco commissions. Caravaggio’s one wall painting, a ceiling in the Villa Ludovisi, was executed in oil. </p>
 
-      <p>The technique he is known best for is chiaro scuro, or tenebrism, were light and shadow are used to dramatic effect.  We know he worked quickly - by 1595 he had 40 works to his name.</p>
+      <p>His one other painting on panel, the David and Goliath in Vienna, was painted on top of a painting by a different artist. Caravaggio’s canvases were typically a medium, simple weave, 7 x 7 cm sq., but on occasion he used a twill weave canvas called “tela Olona”, typical for the Veneto, for example in the Madonna dei Palafrenieri, and a linen with interwoven lozenge pattern called “tela di Fiandra” normally used for table cloths, as in the Cleveland Saint Andrew. A number of Caravaggio’s paintings are on top of previous paintings, such as in the Still Life in the Ambrosiana, the Fortune Teller in the Capitoline Museum, and the Lute Player in the Metropolitan Museum, New York.</p>
 
-      <p>In 1597, Caravaggio was awarded the commission for the decoration of the Contarelli Chapel in the Church of San Luigi dei Francesi in Rome. It was an important and daunting assignment, charging the 26-year-old painter with the task of creating three large paintings depicting separate scenes from St Matthew's life.</p>
-
-      <p>The three resulting works, "St. Matthew and the Angel," "The Calling of St. Matthew," and "The Martyrdom of St. Matthew," were finished in 1601, and together showed Caravaggio's remarkable range as an artist.</p>
-
+      </article>
       </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">place</i>Did Caravaggio use a primitive form of photography?</div>
+      <div class="collapsible-header"><i class="material-icons">perm_media</i>Ground</div>
       <div class="collapsible-body"><article>
+
+      <p>The While gray grounds, more typical of Lombard painting, can be found in some of Caravaggio’s early paintings in Rome, such as the Kimbell Cardsharps and the Capitoline Fortune Teller, most of Caravaggio’s paintings have a dark red-brown, somewhat translucent ground that he came to utilize in a very particular manner.</p>
+
+      <p>Caravaggio’s contemporary, Giovan Pietro Bellori, observed that Caravaggio “left the ground visible in the half-tones” (…lasciò in mezze tinte l’imprimatura della tela). This particular feature of Caravaggio’s technique, something of a short cut, can be observed particularly in most of his mature and late works, and has been discussed by Larry Keith in regard to the Boy Bitten by the Lizard in the National Gallery, London. This ground characterized by Keith as “naturally translucent as well as dark in color”, is composed of chalk (calcite), earth pigments and a little lead white, and is visible in the shadows on the upper body beneath the head, and in the drapery to the right of the head. Its translucency is apparently imparted by the considerable quantity of chalk in the mixture. The dark, sketchy brushwork of the abbozzo can be seen in these areas as well. Where Caravaggio used a rough twill weave canvas, such as in the Madonna dei Palafrenieri, he first applied a layer of gesso composed of chalk and glue to minimize the canvas texture before applying the dark red-brown oil ground.</p>
+
+      </article></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">invert_colors</i>Preliminary Drawing</div>
+      <div class="collapsible-body">
+
+      <article>
 
       <p>The art historian Roberta Lapucci has noted that there are a higher number than average of left-handed models in works painted by Caravaggio during an early stage of his career.  This observation suggests that he may have been unable to reverse the projected image from left to right with the system he used at the time.  The artist David Hockney thinks this is plausible, and Dr John Spike agrees.</p>
 
@@ -184,73 +198,84 @@
 
       <p>“X-ray fluorescence did not find magnesium in Caravaggio’s artwork, and only a small amount of silver, but it did detect mercury everywhere,” Lapucci said.</p>
 
-      <p>Lapucci said that, consequently, it can be supposed that mercury is located in the priming layer. However, to position mercury with certainty, cross sections (requiring destructive testing) or a new kind of analysis would be needed – a sort of x-ray fluorescence that scans for the presence of the element micron by micron to understand where the mercury is located and, consequently, whether the artist exposed the primed canvas to mercury vapors (such as mercury iodide), or mixed the materials with the priming components, or applied these materials over the priming as jelly emulsions</p></article></div>
+      <p>Lapucci said that, consequently, it can be supposed that mercury is located in the priming layer. However, to position mercury with certainty, cross sections (requiring destructive testing) or a new kind of analysis would be needed – a sort of x-ray fluorescence that scans for the presence of the element micron by micron to understand where the mercury is located and, consequently, whether the artist exposed the primed canvas to mercury vapors (such as mercury iodide), or mixed the materials with the priming components, or applied these materials over the priming as jelly emulsions</p>
+
+      <p>Some art and dress historians have noted that the same items of clothing appear time and again in Caravaggio's works, suggesting again that his modus operandi is to paint directly from a posed scene in front of him, rather than drawing from life.</p>
+
+      </article></div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+      <div class="collapsible-header"><i class="material-icons">mode_edit</i>Paint Layers</div>
+      <div class="collapsible-body"><article>
+
+      <p>Where Caravaggio’s medium has been identified it appears to have been predominantly walnut oil, most likely it was first heated with litharge for quicker drying. For highlights on the skin tones he apparently used a mixture of oil and egg tempera, identified in the Detroit Magdalen and the London Boy Bitten. His pigments were relatively few, in comparison with the great range found in Venetian paintings. His basic palette included lead white, red and yellow ocher, lead-tin yellow, vermilion (cinnbar), malachite, carbon black and earth colors, plus madder lake and copper resinate glazes. </p>
+
+      </article></div>
     </li>
+
+    <li>
+      <div class="collapsible-header"><i class="material-icons">assessment</i>What does this say about Caravaggio?</div>
+      <div class="collapsible-body"><article>
+
+        <p>Caravaggio’s profoundly moving images were produced by an exceptionally efficient and increasingly effective technique adapted to the needs of execution using live models and later to the needs of swift execution. The sound craftsmanship and materials used have produced paintings of exceptional durability.</p>
+
+        <p>An understanding of the materials and experience in
+        their handling and application can contribute
+        exceptionally to appreciation of his work.</p>
+        </article></div>
+      </li>
   </ul>
 
 </div>
 
 
-<div class="row">
-     
-      
+  <div class="row">
+    <div class="col s4 
+    m4 l4">
+      <img class="materialboxed z-depth-2 responsive-img" src="img/supperatemmaus.jpg" data-caption="Caravaggio, Supper at Emmaus, National Gallery, London, 1601" width=300 height=200>
+    </div>
+    <div class="col s4 m4 l4">
+      <img class="materialboxed z-depth-2 responsive-img" width="300" height="300" src="img/boybitten.jpg" data-caption="Caravaggio, Boy Bitten by a Lizard, London, National Gallery, late 1590’s">
+    </div>
+    <div class="col s4 m4 l4">
+      <img class="materialboxed z-depth-2 responsive-img" width="300" height="200" src="img/callingofmatthewlarge.jpg" data-caption="Caravaggio, Calling of St Matthew, Contarelli Chapel, 1600">
+    </div>
 </div>
 
-    <div class="section">
-
+  <div class="row">
+    <div class="col s4 m4 l4">
+      <img class="materialboxed z-depth-2 responsive-img" width="300" height="200" src="img/davidandgoliath.jpg" data-caption="David with the Head of Goliath, Kunsthistoriches Museum, 1607">
     </div>
+  <div class="col s4 m4 l4">
+      <img class="materialboxed z-depth-2 responsive-img" width="300" height="200" src="img/background1.jpg" data-caption="Card Sharps,  Kimbell Art Museum, c. 1594">
   </div>
+    <div class="col s4 m4 l4">
+      <img class="materialboxed z-depth-2 responsive-img" width="300" height="200" src="img/judith-beheading-holofernes-1598.jpg" data-caption="Judith and Holofernes, Palazzo Barberini, Rome, 1598">
+    </div>
+</div>
 
-  <footer class="page-footer orange">
+  <footer class="page-footer light-blue">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          <h5 class="white-text">&copy; Patrick Brown 2016</h5>
+          <p class="grey-text text-lighten-4">This site is a proof of concept for a new way to engage with works of art remotely.</p>
 
 
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      Made with <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
       </div>
     </div>
   </footer>
 
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-
- <script> $(document).ready(function(){
-      $('.slider').slider({full_width: true});
-    });
- </script>
+  <script src="js/main.js"></script>
 
   </body>
 </html>
